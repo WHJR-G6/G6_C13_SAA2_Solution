@@ -4,7 +4,7 @@ function preload() {
   ballimg = loadImage('ball.png');
   paddleimg=loadImage("paddle.png");
   bgImage = loadImage("bg.PNG");
-  bounceSound= loadSound("Bounce.mp3");
+
 }
 
 function setup() {
@@ -42,8 +42,5 @@ function draw() {
 function explosion()
 {
   ball.velocityY=random(-8,8);
-
-  bounceSound.play();
-
 }
 
